@@ -1,5 +1,6 @@
 OmniauthTutorial::Application.routes.draw do
   get '/login', :to => 'sessions#new', :as => :login
+  get '/logout', :to => 'sessions#destroy'
   match '/auth/:provider/callback', :to => 'sessions#create'
   match '/auth/failure', :to => 'sessions#failure'
   # The priority is based upon order of creation:
