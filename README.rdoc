@@ -1,1 +1,2 @@
 a simple demo about omniauth
+ominauth by facebook
